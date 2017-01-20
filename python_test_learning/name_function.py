@@ -1,8 +1,8 @@
-def get_formatted_name(first, last, middle=''):
+def get_formatted_name(city, country, population=''):
     """Get formatted name"""
 
-    if middle:
-        full_name = first + ' ' + middle + ' ' + last
+    if population:
+        full_name = city + ',' + country + '-population: ' + str(population)
     else:
-        full_name = first + ' ' + last
+        full_name = city + ',' + country
     return full_name.title()

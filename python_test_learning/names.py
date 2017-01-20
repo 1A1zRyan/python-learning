@@ -3,12 +3,12 @@ from name_function import get_formatted_name
 print("Enter 'q' at any time to quit. ")
 
 while True:
-    first = input("\nPlease give me a first name: ")
-    if first == 'q':
+    city = input("\nPlease give me a City name: ")
+    if city == 'q':
         break
-    last = input("\nPlease give me a last name: ")
-    if last == 'q':
+    country = input("\nPlease give me a Country name: ")
+    if country == 'q':
         break
 
-    formmatted_name = get_formatted_name(first ,last)
+    formmatted_name = get_formatted_name(city ,country)
     print("\t Neatly formatted name: " + formmatted_name + '.')
