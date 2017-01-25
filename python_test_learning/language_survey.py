@@ -1,4 +1,4 @@
-from  survey import AnonymousSurvey
+from survey import AnonymousSurvey
 
 question = "What language did you first learn to speak?"
 my_survey = AnonymousSurvey(question)
@@ -10,3 +10,6 @@ while True:
     if response == 'q':
         break
     my_survey.store_response(response)
+
+print("\nThank you to everyone who participated in the survey!")
+my_survey.show_results()
